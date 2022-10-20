@@ -35,6 +35,7 @@
             this.mnuPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRelatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuProdutos = new System.Windows.Forms.ToolStripMenuItem();
+            this.lnkSobre = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -91,15 +92,27 @@
             // mnuProdutos
             // 
             this.mnuProdutos.Name = "mnuProdutos";
-            this.mnuProdutos.Size = new System.Drawing.Size(180, 22);
+            this.mnuProdutos.Size = new System.Drawing.Size(122, 22);
             this.mnuProdutos.Text = "Produtos";
             this.mnuProdutos.Click += new System.EventHandler(this.mnuProdutos_Click);
+            // 
+            // lnkSobre
+            // 
+            this.lnkSobre.AutoSize = true;
+            this.lnkSobre.Location = new System.Drawing.Point(12, 428);
+            this.lnkSobre.Name = "lnkSobre";
+            this.lnkSobre.Size = new System.Drawing.Size(56, 13);
+            this.lnkSobre.TabIndex = 3;
+            this.lnkSobre.TabStop = true;
+            this.lnkSobre.Text = "Sobre mim";
+            this.lnkSobre.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSobre_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lnkSobre);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -121,6 +134,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuPedido;
         private System.Windows.Forms.ToolStripMenuItem mnuRelatorio;
         private System.Windows.Forms.ToolStripMenuItem mnuProdutos;
+        private System.Windows.Forms.LinkLabel lnkSobre;
     }
 }
 

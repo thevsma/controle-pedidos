@@ -114,6 +114,7 @@
             // 
             // btnAcrescentar
             // 
+            this.btnAcrescentar.Enabled = false;
             this.btnAcrescentar.Location = new System.Drawing.Point(87, 217);
             this.btnAcrescentar.Name = "btnAcrescentar";
             this.btnAcrescentar.Size = new System.Drawing.Size(86, 23);

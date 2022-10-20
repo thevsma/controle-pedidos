@@ -33,7 +33,16 @@ namespace ControlePedidosMVP
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
-        {
+        {   
+            if(lstProdutos.SelectedItems.Count == 0)
+            {
+                btnAcrescentar.Enabled = false;
+            }
+            else
+            {
+                btnAcrescentar.Enabled = true;
+            }
+
             try
             {
                 lstProdutos.DataSource = BancoDadosSimulado.LocalizarNome(txtNome.Text);
@@ -47,6 +56,15 @@ namespace ControlePedidosMVP
         private void txtCod_TextChanged(object sender, EventArgs e)
         {
             List<Produto> list = new List<Produto>();
+
+            if (lstProdutos.SelectedItems.Count == 0)
+            {
+                btnAcrescentar.Enabled = false;
+            }
+            else
+            {
+                btnAcrescentar.Enabled = true;
+            }
 
             try
             {
@@ -67,12 +85,19 @@ namespace ControlePedidosMVP
 
         private void btnAcrescentar_Click(object sender, EventArgs e)
         {
-            if(lstProdutos.SelectedIndex >= -1)
+            try
             {
-                Item item = new Item(Convert.ToUInt16(numQuant.Value), (Produto)lstProdutos.SelectedItem);
-                p.AdicionarItem(item);
-                lstItens.Items.Add(item);
-                lblTotal.Text = Convert.ToString("Total: R$" + p.CalcularTotal());
+                if (lstProdutos.SelectedIndex >= -1)
+                {
+                    Item item = new Item(Convert.ToUInt16(numQuant.Value), (Produto)lstProdutos.SelectedItem);
+                    p.AdicionarItem(item);
+                    lstItens.Items.Add(item);
+                    lblTotal.Text = Convert.ToString("Total: R$" + p.CalcularTotal());
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Você deve selecionar um produto!");
             }
         }
 

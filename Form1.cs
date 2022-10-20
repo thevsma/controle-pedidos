@@ -35,5 +35,12 @@ namespace ControlePedidosMVP
             p1.MdiParent = this;
             p1.Show();
         }
+
+        private void lnkSobre_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.lnkSobre.LinkVisited = true;
+
+            System.Diagnostics.Process.Start("https://github.com/thevsma");
+        }
     }
 }
