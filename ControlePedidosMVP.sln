@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlePedidosMVP", "ControlePedidosMVP.csproj", "{4207A9C0-ACB1-4608-8EE2-C5BEE56B729F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4207A9C0-ACB1-4608-8EE2-C5BEE56B729F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4207A9C0-ACB1-4608-8EE2-C5BEE56B729F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4207A9C0-ACB1-4608-8EE2-C5BEE56B729F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4207A9C0-ACB1-4608-8EE2-C5BEE56B729F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3260506C-0027-457B-834E-DC5E659BAC57}
+	EndGlobalSection
+EndGlobal
